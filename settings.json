@@ -1,0 +1,312 @@
+{
+  "editor.cursorSurroundingLines": 10,
+  "editor.minimap.enabled": true,
+  "editor.renderControlCharacters": false,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.altClickMovesCursor": false,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.cursorBlinking": true,
+  "editor.fontSize": 14,
+  "debug.console.fontFamily": "FiraCode Nerd Font Mono",
+  "markdown.preview.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.cursorSurroundingLinesStyle": "all",
+  "telemetry.telemetryLevel": "off",
+  "workbench.editor.sharedViewState": true,
+  "workbench.editor.revealIfOpen": false,
+  "go.buildOnSave": "off",
+  "go.lintTool": "golangci-lint",
+  "terminal.integrated.fontSize": 15,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.accessibilitySupport": "off",
+  "editor.codeLensFontFamily": "FiraCode Nerd Font Mono",
+  "scm.inputFontFamily": "FiraCode Nerd Font Mono",
+  "go.docsTool": "guru",
+  "go.editorContextMenuCommands": {
+    "fillStruct": true
+  },
+  "keyboard.dispatch": "keyCode",
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "editor.hover.enabled": false,
+  "editor.parameterHints.enabled": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.lineNumbers": "relative",
+  "projectManager.git.baseFolders": ["~/git-clones"],
+  "workbench.startupEditor": "none",
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.quickOpenNavigateNextInFilePicker"
+  ],
+  "terminal.integrated.allowChords": false,
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+  "C_Cpp.vcFormat.indent.caseLabels": true,
+  "editor.formatOnSave": true,
+  "javascript.format.semicolons": "remove",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorStyle": "block",
+  "Lua.telemetry.enable": false,
+  "editor.smoothScrolling": true,
+  "editor.quickSuggestionsDelay": 0,
+  "files.simpleDialog.enable": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "workbench.list.defaultFindMode": "filter",
+  "workbench.panel.opensMaximized": "never",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.iconTheme": "vscode-icons",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "block",
+  "vim.cursorStylePerMode.visual": "block",
+  "vim.cursorStylePerMode.visualblock": "block",
+  "vim.cursorStylePerMode.visualline": "block",
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.showMarksInGutter": true,
+  "vim.showmodename": false,
+  "vim.startofline": false,
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
+  "whichkey.bindings": [
+    {
+      "key": "l",
+      "name": "LSP...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "Show hover",
+          "type": "command",
+          "command": "editor.action.showHover"
+        },
+        {
+          "key": "D",
+          "name": "Peek definitions",
+          "type": "command",
+          "command": "editor.action.peekDefinition"
+        },
+        {
+          "key": "n",
+          "name": "Peek definitions",
+          "type": "command",
+          "command": "editor.action.rename"
+        },
+        {
+          "key": "a",
+          "name": "Code actions",
+          "type": "command",
+          "command": "problems.action.showQuickFixes"
+        },
+        {
+          "key": "l",
+          "name": "Code actions",
+          "type": "command",
+          "command": "editor.action.marker.next"
+        },
+        {
+          "key": "h",
+          "name": "Code actions",
+          "type": "command",
+          "command": "editor.action.marker.previous"
+        },
+        {
+          "key": "o",
+          "name": "Code actions",
+          "type": "command",
+          "command": "problems.action.showMultilineMessage"
+        },
+        {
+          "key": "r",
+          "name": "Code actions",
+          "type": "command",
+          "command": "editor.action.showReferences"
+        }
+      ]
+    },
+    {
+      "key": "k",
+      "name": "Serch stuff",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "f",
+          "name": "Open files",
+          "type": "command",
+          "command": "workbench.action.quickOpen"
+        },
+        {
+          "key": "r",
+          "name": "Grep files",
+          "type": "command",
+          "command": "workbench.action.findInFiles"
+        },
+        {
+          "key": "w",
+          "name": "Search word under cursor",
+          "type": "command",
+          "command": "extension.searchUnderCursor"
+        }
+      ]
+    },
+    {
+      "key": "s",
+      "name": "Quick",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "v",
+          "name": "Split vertically",
+          "type": "command",
+          "command": "workbench.action.splitEditorRight"
+        },
+        {
+          "key": "s",
+          "name": "Split horizontally",
+          "type": "command",
+          "command": "workbench.action.splitEditorDown"
+        }
+      ]
+    },
+    {
+      "key": "z",
+      "name": "Zen mode",
+      "type": "command",
+      "command": "workbench.action.toggleZenMode"
+    },
+    {
+      "key": "a",
+      "name": "Quick",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "a",
+          "name": "Open files",
+          "type": "command",
+          "command": "workbench.action.quickOpen"
+        },
+        {
+          "key": "r",
+          "name": "Grep files",
+          "type": "command",
+          "command": "workbench.action.findInFiles"
+        },
+        {
+          "key": "w",
+          "name": "Search word under cursor",
+          "type": "command",
+          "command": "extension.searchUnderCursor"
+        },
+        {
+          "key": "d",
+          "name": "Toggle left sidebar",
+          "type": "command",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "key": "f",
+          "name": "Toggle right sidebar",
+          "type": "command",
+          "command": "workbench.action.toggleAuxiliaryBar"
+        },
+        {
+          "key": "s",
+          "name": "open terminal",
+          "type": "command",
+          "command": "extension.multiCommand.execute",
+          "args": {
+            "sequence": ["workbench.action.togglePanel"]
+          }
+        }
+      ]
+    },
+    {
+      "key": "c",
+      "name": "...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "m",
+          "name": "Comment line/block",
+          "type": "conditional",
+          "bindings": [
+            {
+              "key": "vim.mode == 'Normal' || vim.mode == 'Visual'",
+              "name": "Comment line",
+              "type": "command",
+              "command": "editor.action.commentLine"
+            },
+            {
+              "key": "vim.mode == 'VisualLine' || vim.mode == 'VisualBlock' ||",
+              "name": "Comment line",
+              "type": "command",
+              "command": "editor.action.blockComment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "d",
+      "name": "Quick",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "b",
+          "name": "Toggle breakpoint",
+          "type": "command",
+          "command": "editor.debug.action.toggleBreakpoint"
+        },
+        {
+          "key": "s",
+          "name": "Toggle breakpoint",
+          "type": "command",
+          "command": "workbench.action.debug.start"
+        },
+        {
+          "key": "S",
+          "name": "Toggle breakpoint",
+          "type": "command",
+          "command": "workbench.action.debug.stop"
+        }
+      ]
+    }
+  ],
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "zenMode.fullScreen": false,
+  "zenMode.restore": false,
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.silentNotifications": false,
+  "workbench.editor.enablePreview": false
+}
