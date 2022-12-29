@@ -308,5 +308,17 @@
   "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.silentNotifications": false,
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [" "],
+      "commands": ["whichkey.show"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [" "],
+      "commands": ["whichkey.show"]
+    }
+  ]
 }

@@ -439,10 +439,5 @@
   {
     "key": "ctrl+7",
     "command": "workbench.view.extension.dockerView"
-  },
-  {
-    "key": "space",
-    "command": "whichkey.show",
-    "when": "vim.mode == 'Normal' && editorFocus || vim.mode == 'VisualLine' && editorFocus || vim.mode == 'VisualBlock' && editorFocus || !inputFocus"
   }
 ]
