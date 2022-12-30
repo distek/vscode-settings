@@ -4,13 +4,13 @@
   "editor.renderControlCharacters": false,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.altClickMovesCursor": false,
-  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontFamily": "TerminessTTF Nerd Font Mono",
   "go.toolsManagement.autoUpdate": true,
   "terminal.integrated.cursorBlinking": true,
-  "editor.fontSize": 14,
-  "debug.console.fontFamily": "FiraCode Nerd Font Mono",
-  "markdown.preview.fontFamily": "FiraCode Nerd Font Mono",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontSize": 18,
+  "debug.console.fontFamily": "TerminessTTF Nerd Font Mono",
+  "markdown.preview.fontFamily": "TerminessTTF Nerd Font Mono",
+  "terminal.integrated.fontFamily": "TerminessTTF Nerd Font Mono",
   "editor.cursorSurroundingLinesStyle": "all",
   "telemetry.telemetryLevel": "off",
   "workbench.editor.sharedViewState": true,
@@ -23,15 +23,14 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.accessibilitySupport": "off",
-  "editor.codeLensFontFamily": "FiraCode Nerd Font Mono",
-  "scm.inputFontFamily": "FiraCode Nerd Font Mono",
+  "editor.codeLensFontFamily": "TerminessTTF Nerd Font Mono",
+  "scm.inputFontFamily": "TerminessTTF Nerd Font Mono",
   "go.docsTool": "guru",
   "go.editorContextMenuCommands": {
     "fillStruct": true
   },
   "keyboard.dispatch": "keyCode",
   "go.useCodeSnippetsOnFunctionSuggest": true,
-  "editor.hover.enabled": false,
   "editor.parameterHints.enabled": true,
   "editor.quickSuggestions": {
     "other": true,
@@ -80,14 +79,11 @@
   "files.trimFinalNewlines": true,
   "workbench.list.defaultFindMode": "filter",
   "workbench.panel.opensMaximized": "never",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "workbench.iconTheme": "vscode-icons",
   "vim.cursorStylePerMode.insert": "line",
   "vim.cursorStylePerMode.normal": "block",
   "vim.cursorStylePerMode.replace": "block",
-  "vim.cursorStylePerMode.visual": "block",
-  "vim.cursorStylePerMode.visualblock": "block",
-  "vim.cursorStylePerMode.visualline": "block",
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
   "vim.showMarksInGutter": true,
@@ -141,13 +137,13 @@
           "key": "o",
           "name": "Code actions",
           "type": "command",
-          "command": "problems.action.showMultilineMessage"
+          "command": "codelens.showLenseInCurrentLine"
         },
         {
           "key": "r",
           "name": "Code actions",
           "type": "command",
-          "command": "editor.action.showReferences"
+          "command": "editor.action.goToReferences"
         }
       ]
     },
@@ -211,6 +207,12 @@
           "name": "Open files",
           "type": "command",
           "command": "workbench.action.quickOpen"
+        },
+        {
+          "key": "A",
+          "name": "Open files",
+          "type": "command",
+          "command": "workbench.action.openRecent"
         },
         {
           "key": "r",
@@ -297,8 +299,48 @@
           "command": "workbench.action.debug.stop"
         }
       ]
+    },
+    {
+      "key": "n",
+      "name": "Dendron",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "l",
+          "name": "Lookup",
+          "type": "command",
+          "command": "dendron.lookupNote"
+        },
+        {
+          "key": "p",
+          "name": "Toggle markdown preview",
+          "type": "command",
+          "command": "dendron.togglePreview"
+        },
+        {
+          "key": "j",
+          "name": "Toggle markdown preview",
+          "type": "command",
+          "command": "dendron.createDailyJournalNote"
+        },
+        {
+          "key": "s",
+          "name": "Toggle markdown preview",
+          "type": "command",
+          "command": "dendron.createScratchNote"
+        },
+        {
+          "key": "n",
+          "name": "Toggle markdown preview",
+          "type": "command",
+          "command": "dendron.createNote"
+        }
+      ]
     }
   ],
+
+  // "command": "-dendron.lookupNote",
+  // "when": "dendron:pluginActive"
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.tabs.hideCondition": "never",
@@ -320,5 +362,18 @@
       "before": [" "],
       "commands": ["whichkey.show"]
     }
-  ]
+  ],
+  "vim.cursorStylePerMode.visual": "",
+  "vim.cursorStylePerMode.visualblock": "",
+  "vim.cursorStylePerMode.visualline": "",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "references.preferredLocation": "view",
+  "redhat.telemetry.enabled": false,
+  "editor.inlayHints.fontFamily": "TerminessTTF Nerd Font Mono",
+  "notebook.outputFontFamily": "TerminessTTF Nerd Font Mono",
+  "errorLens.fontFamily": "TerminessTTF Nerd Font Mono",
+  "editor.fontVariations": false,
+  "vscode_custom_css.imports": ["file:///home/busypanini/.vscode/custom.css"]
 }

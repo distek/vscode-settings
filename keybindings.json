@@ -439,5 +439,33 @@
   {
     "key": "ctrl+7",
     "command": "workbench.view.extension.dockerView"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "-workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "-workbench.action.files.openLocalFolder",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "enter",
+    "command": "-revealReference",
+    "when": "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand"
+  },
+  {
+    "key": "enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": ["revealReference", "closeReferenceSearchEditor"]
+    },
+    "when": "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-dendron.lookupNote",
+    "when": "dendron:pluginActive"
   }
 ]
