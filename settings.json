@@ -56,7 +56,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -353,6 +352,14 @@
   "workbench.editor.enablePreview": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
       "before": [" "],
       "commands": ["whichkey.show"]
     }
@@ -375,5 +382,13 @@
   "notebook.outputFontFamily": "TerminessTTF Nerd Font Mono",
   "errorLens.fontFamily": "TerminessTTF Nerd Font Mono",
   "editor.fontVariations": false,
-  "vscode_custom_css.imports": ["file:///home/busypanini/.vscode/custom.css"]
+  "vscode_custom_css.imports": [
+    "file:///home/busypanini/.vscode/custom.css",
+    "file:///home/busypanini/.vscode/indicator.js"
+  ],
+  "editor.wordWrap": "on",
+  "window.menuBarVisibility": "compact",
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": -1
 }
