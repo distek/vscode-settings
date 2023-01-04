@@ -2,4 +2,8 @@ git reset --hard
 
 git pull
 
-sed -i "s#%HOMEPATH%#$HOME#g" settings.json
+if [[ $(uname) == "Linux" ]]; then
+	sed -i "s#%HOMEPATH%#$HOME#g" settings.json
+else
+	gsed -i "s#%HOMEPATH%#$HOME#g" settings.json
+fi
