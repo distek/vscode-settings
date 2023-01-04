@@ -383,8 +383,8 @@
   "errorLens.fontFamily": "TerminessTTF Nerd Font Mono",
   "editor.fontVariations": false,
   "vscode_custom_css.imports": [
-    "file:///home/busypanini/.vscode/custom.css",
-    "file:///home/busypanini/.vscode/indicator.js"
+    "file://%HOMEPATH%/.vscode/custom.css",
+    "file://%HOMEPATH%/.vscode/indicator.js"
   ],
   "editor.wordWrap": "on",
   "window.menuBarVisibility": "compact",
