@@ -1,14 +1,15 @@
 * {
-    font-family: 'TerminessTTF Nerd Font Mono';
+  font-family: "FiraCode Nerd Font Mono";
+  text-shadow: 0 0 7px currentColor;
 }
 
 .editor-group-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 2px;
-    margin-top: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+  margin-top: 1px;
 }
 
 .quick-input-widget {
-    z-index: 3;
+  z-index: 3;
 }

@@ -9,13 +9,18 @@ div.style.zIndex = 100;
 div.style.border = "solid 2px #7f7f7f";
 div.style.pointerEvents = "none";
 div.style.userSelect = "none";
+div.style.boxShadow = "0 0 7px #7f7f7f";
 
 document.getElementsByTagName("body")[0].appendChild(div);
 
 window.addEventListener("blur", moveFocusBorder);
-document.addEventListener("focusin", moveFocusBorder); // I think this is what you meant
+window.addEventListener("transitionstart", moveFocusBorder);
+document.addEventListener("focusin", moveFocusBorder);
 
-function moveFocusBorder() {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function moveFocusBorder() {
+  await sleep(1);
   for (element of document.querySelectorAll(
     ".panel,.sidebar,.editor-group-container"
   )) {
@@ -29,9 +34,9 @@ function moveFocusBorder() {
       document.getElementById("focus-border").style.left = rect.left + "px";
       document.getElementById("focus-border").style.top = rect.top + "px";
       document.getElementById("focus-border").style.width =
-        rect.right - rect.left - 5 + "px";
+        rect.right - rect.left - 4 + "px";
       document.getElementById("focus-border").style.height =
-        rect.bottom - rect.top + "px";
+        rect.bottom - rect.top - 4 + "px";
 
       document.getElementById("focus-border").style.display = "block";
       return;

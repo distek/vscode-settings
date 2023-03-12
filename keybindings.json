@@ -138,11 +138,6 @@
     "command": "-toggleSearchWholeWord",
     "when": "searchViewletFocus"
   },
-  /*   {
-    "key": "ctrl+e",
-    "command": "-cursorEnd",
-    "when": "neovim.mode == 'cmdline_insert' || neovim.mode == 'cmdline_normal' || neovim.mode == 'cmdline_replace'"
-  }, */
   {
     "key": "ctrl+e",
     "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
@@ -307,13 +302,13 @@
   },
   {
     "key": "tab",
-    "command": "workbench.action.nextEditor",
-    "when": "editorFocus && vim.mode != 'Insert'"
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "editorFocus && neovim.mode != 'insert'"
   },
   {
     "key": "shift+tab",
-    "command": "workbench.action.previousEditor",
-    "when": "editorFocus && vim.mode != 'Insert'"
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorFocus && neovim.mode != 'insert'"
   },
   {
     "key": "ctrl+alt+h",
@@ -467,5 +462,35 @@
     "key": "ctrl+l",
     "command": "-dendron.lookupNote",
     "when": "dendron:pluginActive"
+  },
+  {
+    "key": "shift+alt+q",
+    "command": "workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "alt+a k",
+    "command": "workbench.action.terminal.resizePaneUp"
+  },
+  {
+    "key": "alt+a j",
+    "command": "workbench.action.terminal.resizePaneDown"
+  },
+  {
+    "key": "alt+a -",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "workbench.view.extension.vscode-notes"
   }
 ]
