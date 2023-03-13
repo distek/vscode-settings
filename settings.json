@@ -38,7 +38,11 @@
     "strings": false
   },
   "editor.lineNumbers": "relative",
-  "projectManager.git.baseFolders": ["~/git-clones"],
+  "projectManager.git.baseFolders": [
+    "~/git-clones",
+    "~/Programming/golang/src/codeberg.org/distek",
+    "~/Programming/golang/src/github.com/distek"
+  ],
   "workbench.startupEditor": "none",
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.quickOpenNavigateNextInFilePicker"
@@ -76,7 +80,7 @@
   "files.trimFinalNewlines": true,
   "workbench.list.defaultFindMode": "filter",
   "workbench.panel.opensMaximized": "never",
-  "workbench.colorTheme": "Acid Purple (Pink)",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.colorCustomizations": {
     // "panel.background": "#1a1c20"
@@ -307,39 +311,22 @@
       ]
     },
     {
-      "key": "n",
-      "name": "Dendron",
+      "key": "g",
+      "name": "Git",
       "type": "bindings",
       "bindings": [
         {
-          "key": "l",
-          "name": "Lookup",
-          "type": "command",
-          "command": "dendron.lookupNote"
-        },
-        {
-          "key": "p",
-          "name": "Toggle markdown preview",
-          "type": "command",
-          "command": "dendron.togglePreview"
-        },
-        {
-          "key": "j",
-          "name": "Toggle markdown preview",
-          "type": "command",
-          "command": "dendron.createDailyJournalNote"
-        },
-        {
           "key": "s",
-          "name": "Toggle markdown preview",
+          "name": "Stage",
           "type": "command",
-          "command": "dendron.createScratchNote"
+          "command": "vscode-neovim.send",
+          "args": "<cmd> call VSCodeNotifyVisual('git.stageSelectedRanges', 0)<CR>"
         },
         {
-          "key": "n",
-          "name": "Toggle markdown preview",
+          "key": "c",
+          "name": "Commit",
           "type": "command",
-          "command": "dendron.createNote"
+          "command": "git.commit"
         }
       ]
     }
@@ -357,29 +344,6 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.silentNotifications": false,
   "workbench.editor.enablePreview": false,
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["j"],
-      "after": ["g", "j"]
-    },
-    {
-      "before": ["k"],
-      "after": ["g", "k"]
-    },
-    {
-      "before": [" "],
-      "commands": ["whichkey.show"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [" "],
-      "commands": ["whichkey.show"]
-    }
-  ],
-  "vim.cursorStylePerMode.visual": "",
-  "vim.cursorStylePerMode.visualblock": "",
-  "vim.cursorStylePerMode.visualline": "",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

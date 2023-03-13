@@ -23,7 +23,6 @@
 "ms-azuretools.vscode-docker"
 "sumneko.lua"
 "distek.tabgroup-sync"
-"ms-vscode.vscode-typescript-next"
 "monokai.theme-monokai-pro-vscode"
 "azemoh.one-monokai"
 "asvetliakov.vscode-neovim"
@@ -31,3 +30,4 @@
 "kortina.vscode-markdown-notes"
 "dionmunk.vscode-notes"
 "convolution.zone-green"
+"ms-vscode.vscode-typescript-next"
